@@ -1,0 +1,9 @@
+<ul class="row stocks">
+  <li class="col-md-3 col-sm-4 col-xs-6" *ngFor="let stock of stocks; let i = index">
+    <div class="stock">
+      <button type="button" class="close" (click)="remove(i)">×</button>
+      <h4>{{stock.symbol}}</h4>
+      <p>{{stock.name}}</p>
+    </div>
+  </li>
+</ul>

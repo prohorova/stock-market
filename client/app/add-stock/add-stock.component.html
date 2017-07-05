@@ -1,0 +1,16 @@
+<div class="new-stock clearfix row" >
+  <div class="col-md-4 col-sm-6">
+    <form [formGroup]="stockForm" (submit)="add(stockForm.controls.stock.value)">
+      <div class="text-danger" *ngIf="error">{{error}}</div>
+      <div class="input-group">
+        <input type="text" class="form-control" placeholder="Stock symbol" formControlName="stock" />
+        <span class="input-group-btn">
+        <button class="btn btn-primary" type="submit" [disabled]="stockForm.invalid || inProgress">
+          Add
+          <span class="glyphicon glyphicon-repeat loader" *ngIf="inProgress"></span>
+        </button>
+      </span>
+      </div>
+    </form>
+  </div>
+</div>

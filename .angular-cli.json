@@ -5,11 +5,12 @@
   },
   "apps": [
     {
-      "root": "src",
+      "root": "client",
       "outDir": "dist",
       "assets": [
         "assets",
-        "favicon.ico"
+        "favicon.ico",
+        "fonts"
       ],
       "index": "index.html",
       "main": "main.ts",
@@ -19,9 +20,14 @@
       "testTsconfig": "tsconfig.spec.json",
       "prefix": "app",
       "styles": [
+        "bootstrap.min.css",
+        "../node_modules/nvd3/build/nv.d3.min.css",
         "styles.css"
       ],
-      "scripts": [],
+      "scripts": [
+        "../node_modules/d3/d3.min.js",
+        "../node_modules/nvd3/build/nv.d3.min.js"
+      ],
       "environmentSource": "environments/environment.ts",
       "environments": {
         "dev": "environments/environment.ts",
@@ -36,10 +42,10 @@
   },
   "lint": [
     {
-      "project": "src/tsconfig.app.json"
+      "project": "client/tsconfig.app.json"
     },
     {
-      "project": "src/tsconfig.spec.json"
+      "project": "client/tsconfig.spec.json"
     },
     {
       "project": "e2e/tsconfig.e2e.json"

@@ -1,0 +1,105 @@
+.wrapper {
+  margin: 20px auto;
+}
+
+.wrapper h1 {
+  margin-top: 0;
+}
+
+.new-stock {
+  margin-bottom: 20px;
+}
+
+.stocks {
+  list-style: none;
+  padding-left: 0;
+}
+
+footer {
+  margin-bottom: 10px;
+}
+
+/* graph */
+
+.graph {
+  height: 350px;
+}
+
+.nv-axis.nv-y path {
+  display: none;
+}
+
+.nv-axis text, .nv-legend-text  {
+  fill: #fff;
+}
+
+.nvd3 g.nv-groups path.nv-line {
+  stroke-width: 3px;
+}
+
+
+/* loader */
+
+@-webkit-keyframes rotating /* Safari and Chrome */ {
+  from {
+    -webkit-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+@keyframes rotating {
+  from {
+    -ms-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  to {
+    -ms-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+.loader {
+  -webkit-animation: rotating 2s linear infinite;
+  -moz-animation: rotating 2s linear infinite;
+  -ms-animation: rotating 2s linear infinite;
+  -o-animation: rotating 2s linear infinite;
+  animation: rotating 2s linear infinite;
+}
+
+/* datepicker */
+
+.mydp {
+  display: inline-block !important;
+  width: 150px !important;
+}
+
+.mydp, .mydp .headertodaybtn, .mydp .selection, .mydp .selectiongroup, .mydp .selector {
+  border-radius: 0 !important;
+}
+
+.mydp .btnclear, .mydp .btndecrease, .mydp .btnincrease, .mydp .btnpicker, .mydp .headerbtn,
+.mydp .headermonthtxt, .mydp .headertodaybtn, .mydp .headeryeartxt, .mydp .yearchangebtn {
+  color: #333 !important;
+}
+
+.timelineForm label {
+  vertical-align: top;
+  padding-top: 10px;
+  margin-right: 10px;
+  font-weight: normal;
+  text-transform: uppercase;
+}
+
+.timelineForm .form-group {
+  margin-right: 10px;
+}

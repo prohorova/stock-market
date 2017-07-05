@@ -1,0 +1,13 @@
+<form [formGroup]="timelineForm" class="form-inline timelineForm">
+  <div class="form-group">
+    <label>from </label>
+    <my-date-picker name="from" [options]="myDatePickerOptions"
+                    formControlName="from" (dateChanged)="onDateChanged($event, 'from')"></my-date-picker>
+  </div>
+
+  <div class="form-group">
+    <label>to </label>
+    <my-date-picker name="to" [options]="myDatePickerOptions"
+                    formControlName="to" (dateChanged)="onDateChanged($event, 'from')"></my-date-picker>
+  </div>
+</form>

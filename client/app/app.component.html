@@ -1,0 +1,13 @@
+<div>
+  <div class="container wrapper well">
+    <h1 class="text-center">Stocks</h1>
+    <app-timeline [from]="from" [to]="to" (dateChanged)="onDateChanged($event)"></app-timeline>
+    <app-graph [data]="stockData"></app-graph>
+    <app-add-stock (addStock)="onAddStock($event)"></app-add-stock>
+    <app-stock-list [stocks]="stocks" (removeStock)="onRemoveStock($event)"></app-stock-list>
+  </div>
+
+  <footer class="text-center">
+    <a href="https://github.com/prohorova" target="_blank">&copy; Prokhorova Ann</a>
+  </footer>
+</div>
