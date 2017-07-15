@@ -1,28 +1,25 @@
 # StockMarket
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.0.0.
+Charts for stock market. Part of [FCC](https://www.freecodecamp.org/challenges/chart-the-stock-market)
 
-## Development server
+[Demo](https://stock-market26.herokuapp.com/)
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+Client side was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.0.0.
 
-## Code scaffolding
+## Run
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive/pipe/service/class/module`.
+Install dependencies
 
-## Build
+`npm install`
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `-prod` flag for a production build.
+Run client 
 
-## Running unit tests
+`ng serve`
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+Build client
 
-## Running end-to-end tests
+`ng build`
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-Before running the tests make sure you are serving the app via `ng serve`.
+Run server
 
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+'npm start'
