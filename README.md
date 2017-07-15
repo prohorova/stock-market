@@ -22,4 +22,4 @@ Build client
 
 Run server
 
-'npm start'
+`npm start`
